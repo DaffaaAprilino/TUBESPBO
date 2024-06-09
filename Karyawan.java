@@ -10,7 +10,8 @@ class Karyawan extends Person {
 
     @Override
     public void tampilkanInfo() {
-        super.tampilkanInfo();
+        System.out.println("Nama Karyawan: " + nama);
+        System.out.println("Alamat Karyawan: " + alamat);
         System.out.println("ID Karyawan: " + idKaryawan);
     }
 }

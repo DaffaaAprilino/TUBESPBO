@@ -1,6 +1,11 @@
 package TUBES;
 
-class Produk {
+interface Pajak {
+    double hitungPajak();
+}
+
+// Kelas Produk
+class Produk implements Pajak {
     private String namaProduk;
     private double harga;
 
@@ -16,5 +21,11 @@ class Produk {
 
     public double getHarga() {
         return harga;
+    }
+
+    @Override
+    public double hitungPajak() {
+        // Contoh perhitungan pajak
+        return harga * 0.1; // 10% pajak
     }
 }

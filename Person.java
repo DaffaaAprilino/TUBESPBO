@@ -1,5 +1,5 @@
 package TUBES;
-class Person {
+abstract class Person {
     protected String nama;
     protected String alamat;
 
@@ -8,8 +8,5 @@ class Person {
         this.alamat = alamat;
     }
 
-    public void tampilkanInfo() {
-        System.out.println("Nama: " + nama);
-        System.out.println("Alamat: " + alamat);
-    }
+    public abstract void tampilkanInfo();
 }
